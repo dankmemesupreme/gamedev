@@ -1,0 +1,66 @@
+<h1 align=center> Loops by Mike </h1>
+
+<br><br>
+
+<textarea id="myArea01"> 7 </textarea>
+
+<br><br>
+
+<input type=button value="click me" onclick {
+document.getElementById('myDiv01').innerhHTML =
+document.getElementById('myArea01').value
+}"> <br><br>
+
+
+
+
+
+
+<input type=button  value="For Loop" onclick="{
+ myTemp = 0
+  for (myLoop=2; myLoop<=3; myLoop++){
+       myTemp += 2
+       }
+       document.getElementById('myDiv01').innerHTML = myTemp
+       }"><br><br>
+       
+       <div id="myDiv01">Output here</div>
+       
+       
+       
+<input type=button value="Your Code" onclick="{
+ myTemp = 0
+ document.getElementById('myDiv01').innerHTML = ' 8 '
+ for (myLoop=1; myLoop<=67; myLoop++){
+ 
+ myTemp += parseInt(document.getElementById('myArea01').value)
+ 
+ document.getElementById('myDiv01').innerHTML +=
+    myLoop + ' <-- loop, myTemp --> '+ myTemp + '<br>'
+    
+    }
+    
+    }"> <br><br>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <input type=button value="Your Code" onclick="{
+    myTemp = parseint(document.getElementById('myArea01').value)
+    document.getElementById('myDiv01').innerHTML = ''
+    for (myLoop=1; myLoop<=4; myLoop++){
+    
+    myTemp += myTemp
+    
+    document.getElementById('myDiv01').innerHTML +=
+     myLoop + ' =loop, the total = ' + myTemp + '<br>'
+    }
+    
+    
+    }"><br><br>
