@@ -1,0 +1,22 @@
+<script>
+    document.myHuman = new Array(7)
+    
+    document.myHuman[0] = 'Kaelyn'
+    document.myHuman[1] = 'Dawson'
+    document.myHuman[2] = 'Alexis'
+    document.myHuman[3] = 'Rhyan'
+    document.myHuman[4] = 'Kori'
+    document.myHuman[5] = 'Jake'
+    document.myHuman[6] = 'Angel'
+    document.myHuman[7] = 'Alyssa'
+    
+    </script>
+    
+    <input type=button value="Show Array" onclick="{
+    document.getElementById('myDiv1').innerHTML = ''
+    for (myLoop = 0; myLoop <=7; myLoop++){
+        document.getElementById('myDiv1').innerHTML += myLoop +' '+ document.myHuman[myLoop] + ' <br>'
+        }
+    }">
+        
+        <div id="myDiv1"> Output Here </div> 
